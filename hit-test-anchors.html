@@ -163,7 +163,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       let anchoredObjects = [];
       function addAnchoredObjectsToScene(anchor) {
         let flower = new Gltf2Node({url: 'media/gltf/sunflower/sunflower.gltf'});
-        flower.scaleScale(100);
+        flower.setScale(100);
         scene.addNode(flower);
         anchoredObjects.push({
           anchoredObject: flower,
