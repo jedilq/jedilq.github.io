@@ -29,12 +29,12 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     <link rel='icon' type='image/png' sizes='96x96' href='favicon-96x96.png'>
     <link rel='stylesheet' href='css/common.css'>
 
-    <title>Hit Test with Anchors set(scale=100)</title>
+    <title>Hit Test with Anchors set(scale(100))</title>
   </head>
   <body>
     <header>
       <details open>
-        <summary>Hit Test with Anchors set(scale=100)</summary>
+        <summary>Hit Test with Anchors set(scale(100))</summary>
         <p>
           This sample demonstrates using hit testing to find intersections on real-world surfaces and then using Anchors to attach a virtual object to that location.
           <a class="back" href="./">Back</a>
@@ -68,7 +68,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       scene.addNode(arObject);
 
       let flower = new Gltf2Node({url: 'media/gltf/sunflower/sunflower.gltf'});
-      flower.set(scale=100);
+      flower.set(scale(100));
       arObject.addNode(flower);
 
       let reticle = new Gltf2Node({url: 'media/gltf/reticle/reticle.gltf'});
@@ -163,7 +163,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       let anchoredObjects = [];
       function addAnchoredObjectsToScene(anchor) {
         let flower = new Gltf2Node({url: 'media/gltf/sunflower/sunflower.gltf'});
-        flower.set(scale=100);
+        flower.set(scale(100));
         scene.addNode(flower);
         anchoredObjects.push({
           anchoredObject: flower,
