@@ -67,8 +67,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       arObject.visible = false;
       scene.addNode(arObject);
 
-      let flower = new Gltf2Node({url: 'media/gltf/armchair/armchair.glb'});
-      flower.setScale(0.2,0.2,0.2);
+      let flower = new Gltf2Node({url: 'media/gltf/armchair/armchair_small.glb'});
       arObject.addNode(flower);
 
       let reticle = new Gltf2Node({url: 'media/gltf/reticle/reticle.gltf'});
@@ -162,8 +161,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       const MAX_ANCHORED_OBJECTS = 30;
       let anchoredObjects = [];
       function addAnchoredObjectsToScene(anchor) {
-        let flower = new Gltf2Node({url: 'media/gltf/armchair/armchair.glb'});
-        flower.setScale(0.2,0.2,0.2);
+        let flower = new Gltf2Node({url: 'media/gltf/armchair/armchair_small.glb'});
         scene.addNode(flower);
         anchoredObjects.push({
           anchoredObject: flower,
